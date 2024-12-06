@@ -23,13 +23,13 @@ type Profile struct {
 func main() {
 	me := Profile{
 		FullName: FullName{
-			FirstName: "Max",
-			LastName:  "Mustermann",
+			FirstName: "Nando",
+			LastName:  "Brun",
 		},
 		BirthDate: BirthDate{
-			Day:   1,
+			Day:   11,
 			Month: 1,
-			Year:  1990,
+			Year:  2006,
 		},
 		NumberOfSiblings: 2,
 		ZodiacSign:       'A',

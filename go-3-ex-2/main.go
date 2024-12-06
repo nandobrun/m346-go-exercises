@@ -19,16 +19,36 @@ const (
 
 func outputDateRange(zodiacSign rune) {
 	fmt.Printf("%c: ", zodiacSign)
-	// TODO: Replace if, else if branching with switch/case.
-	// TODO: Define all 12 cases...
-	if zodiacSign == Aries {
-		fmt.Println("21.03. - 20.04")
-	} else if zodiacSign == Taurus {
-		fmt.Println("21.04. - 21.05")
-	} else {
-		fmt.Println("")
+
+	switch zodiacSign {
+	case Aries:
+		fmt.Printf("21.03. - 20.04")
+	case Taurus:
+		fmt.Printf("21.04. - 21.05")
+	case Gemini:
+		fmt.Printf("22.05. - 21.06")
+	case Cancer:
+		fmt.Printf("22.06. - 22.07")
+	case Leo:
+		fmt.Printf("23.07. - 23.08")
+	case Virgo:
+		fmt.Printf("24.08. - 23.09")
+	case Libra:
+		fmt.Printf("24.09. - 23.10")
+	case Scorpius:
+		fmt.Printf("24.10. - 22.11")
+	case Sagittarius:
+		fmt.Printf("23.11. - 21.12")
+	case Capricornus:
+		fmt.Printf("22.12. - 20.01")
+	case Aquarius:
+		fmt.Printf("21.01. - 19.02")
+	case Pisces:
+		fmt.Printf("20.02. - 20.03")
+	default:
+		fmt.Printf("Unknown zodiac sign")
 	}
-	// TODO: ...and consider a default case.
+
 }
 
 func main() {
